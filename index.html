@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+
+<body>
+    <h1>BootCamp Function Testing</h1>
+    <h1>Using mochaJS</h1>
+    <div id="mocha"></div>
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
+
+    <!-- the function to be tested -->
+    <script src="greet.js" charset="utf-8"></script>
+    <!-- followed by the tests -->
+    <script src="greet.tests.js" charset="utf-8"></script>
+    <script src="isFromBellvile.js" charset="utf-8"></script>
+    <!-- followed by the tests -->
+    <script src="isFromBellville.tests.js" charset="utf-8"></script>
+    <script src="isFromCapeTown.js" charset="utf-8"></script>
+    <script src="isFromCapeTown.tests.js" charset="utf-8"></script>
+    <script src="isFromGauteng.js" charset="utf-8"></script>
+    <script src="isFromGauteng.tests.js" charset="utf-8"></script>
+    <script src="isWeekday.js" charset="utf-8"></script>
+    <script src="isWeekday.tests.js" charset="utf-8"></script>
+    <script src="yearsAgo.js" charset="utf-8"></script>
+    <script src="yearsAgo.tests.js" charset="utf-8"></script>
+    <script src="allPaarl.js" charset="utf-8"></script>
+    <script src="allPaarl.tests.js" charset="utf-8"></script>
+    <script src="allFromTown.js" charset="utf-8"></script>
+    <script src="allFromTown.tests.js" charset="utf-8"></script>
+    <script src="totalPhoneBill.js" charset="utf-8"></script>
+    <script src="totalPhoneBill.tests.js" charset="utf-8"></script>
+    <script src="mostExpensiveDepartment.js" charset="utf-8"></script>
+    <script src="mostExpensiveDepartment.tests.js" charset="utf-8"></script>
+    <script src="fromWhere.js" charset="utf-8"></script>
+    <script src="fromWhere.tests.js" charset="utf-8"></script>
+    <!-- the function to be tested -->
+    <script>
+        // configure and run mocha
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+</html>
